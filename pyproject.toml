@@ -1,2 +1,15 @@
+[project]
+name = "supermarket-ops-agent-vercel-test"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "openai-agents>=0.8.0",
+    "python-telegram-bot>=22.8",
+    "python-dotenv>=1.0.1",
+    "reportlab>=4.2.0",
+    "python-pptx>=1.0.2",
+    "matplotlib>=3.9.0"
+]
+
 [tool.vercel]
 entrypoint = "api.webhook:handler"
